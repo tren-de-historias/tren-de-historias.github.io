@@ -248,7 +248,9 @@ h3 {
     padding: 30px;
     min-height: 30vh;
   }
-
+.lectores iframe{
+  max-width:100vw;
+}
   .aside {
     max-width: 940px;
     width: 100%;
