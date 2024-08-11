@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Metro Viveros</title>
+  <link rel="stylesheet" href="css/reset.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <audio id="sonido" src="audio/tururu.mp3"></audio>
+  <header class="header">
+    <div class="menu container">
+      <a href="#" class="logo"><img id="logo" src="imagenes/mlogo-Photoroom-Photoroom.png" alt=""></a>
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Historia</a></li>
+          <li><a href="#">¿Quienes somos?</a></li>
+          <li><a href="#">Escuela De Codigo Pilares</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+  <div class="tres top">
+    <div class="rosa">
+      <div class="botonlog">
+        <p>Estación anterior:</p>
+        <a href="maquevedo.html">
+          <img class="icon" src="imagenes/maquevedo.png"
+            alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="principal">
+
+      
+
+      
+      <div class="botonlog">
+        <p>Estas en:</p>
+        <span>
+        <img class="icon" src="imagenes/viveros-derechos.png" alt="">
+        </span>
+      </div>
+    </div>
+
+    <div class="naranja">
+      <div class="botonlog">
+        <p>Próxima estación:</p>       
+        <a id="btnPlaySound" onclick="delayLink(event, 'lcoyoacan', 900)" href="coyoacan.html">
+          <img class="icon" src="imagenes/coyoacan.png">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="tres centro">
+    <div class="rosa rosam">
+
+    </div>
+    <main>
+
+      <!--aqui va la infografia-->
+      <img class="infografia" src="imageness/info viveros.png">
+
+      <section class="lectores">
+        <h3>Historias de nuestros lectores</h3>
+       
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ejp_O-QYHy4?si=2Iq6TkqLqgyby38e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gVHamHPjK30?si=ci6nw8_VknESqwJD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8zkmVDOJGmk?si=LDM8KTf844-7irok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section class="contacto">
+        <p>
+          Si tienes alguna historia que nos quieras compartir mándala a este correo
+          electronico:sistemadeterrorcolectivo@gmail.com
+
+        </p>
+
+      </section>
+
+    </main>
+    <div class="naranja aside">
+      <aside>
+        <h5>Ubicación</h5>
+        <div class="mapa">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15057.803313097038!2d-99.18273586395259!3d19.349622463511952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffee8e333881%3A0x26d724b60eb7959b!2sViveros%20y%20Derechos%20Humanos!5e0!3m2!1ses-419!2smx!4v1723165846704!5m2!1ses-419!2smx"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+
+  </div>
+  <script>
+    document.getElementById("btnPlaySound").addEventListener("click", function () {
+      var sonido = document.getElementById("sonido");
+      sonido.play();
+    });
+    function delayLink(event, url, delay) {
+      event.preventDefault(); // Previene que el enlace se abra inmediatamente
+      setTimeout(function () {
+        window.location.href = 'coyoacan.html'; // Cambia la ubicación después del retraso
+      }, delay); // `delay` está en milisegundos
+    }
+
+  </script>
+
+</body>
+
+
+</html>

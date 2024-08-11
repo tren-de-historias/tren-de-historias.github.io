@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Metro Miguel Angel de Quevedo </title>
+  <link rel="stylesheet" href="css/reset.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nosifer&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <audio id="sonido" src="audio/tururu.mp3"></audio>
+  <header class="header">
+    <div class="menu container">
+      <a href="#" class="logo"><img id="logo" src="imagenes/mlogo-Photoroom-Photoroom.png" alt=""></a>
+      <input type="checkbox" id="menu" />
+      <label for="menu">
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Historia</a></li>
+          <li><a href="#">¿Quienes somos?</a></li>
+          <li><a href="#">Escuela De Codigo Pilares</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="tres centro">
+    <div class="rosa rosam">
+
+    </div>
+    <main>
+  <!--aqui va la quiennes son-->
+  <br>
+  <p class="quienes">
+    <strong>TREN DE HISTORIAS</strong> es una organización sin fines de lucro en donde creemos que con cada historia es posible transformar el mundo. Somos una organización que promociona
+    el conocimiento de las distintas experiencias de los usuarios en el transporte colectivo metro de la Ciudad de México. 
+  </p>
+  <br>
+  <p class="quienes">
+    Trabajamos con un equipo de apasionados con las historias más asombrosas, así como de voluntarios comprometidos quienes se encargan de diseñar y ofrecer experiencias únicas que van más a allá de las páginas de un libro
+  </p>
+  <br>
+  <br>
+  <p class="quienes">MIEMBROS DEL EQUIPO</p>
+  <br>
+  <br>
+  <div class="containerq">
+    <img src="imagenes/man.png"></im>
+    <div class="textq">
+        <h5>Alejandro Santillan Mejía</h5>
+        <br>
+        <p>Apacionado por la programación</p>
+    </div>
+  </div>  
+  <br><br>
+  <div class="containerq">
+    <img src="imagenes/woman.png"></im>
+    <div class="textq">
+        <h5>Montserrat Miranda Valdez</h5>
+        <br>
+        <p>Entusiasta por la tecnología</p>
+    </div>
+  </div>  
+  <br><br>    
+  <div class="containerq">
+    <img src="imagenes/man.png"></im>
+    <div class="textq">
+        <h5>Armando Mariano Cirilo</h5>
+        <br>
+        <p>Apasionado por aprender nuevas tecnologías</p>
+    </div>
+  </div>  
+  <br><br>    
+  <div class="containerq">
+    <img src="imagenes/man.png"></im>
+    <div class="textq">
+        <h5>Atem Seth Khalil Ortiz</h5>
+        <br>
+        <p>Una persona dedicada a innovar</p>
+    </div>
+  </div>  
+  <br><br>    
+  <div class="containerq">
+    <img src="imagenes/woman.png"></im>
+    <div class="textq">
+        <h5>Karina del Rocio García Garibay</h5>
+        <br>
+        <p>Gusto y pasión por enseñar</p>
+    </div>
+  </div>      
+
+    </main>
+    <div class="naranja aside">
+      <aside>
+        
+      </aside>
+    </div>
+  </section>
+
+
+  </div>
+  <script>
+    document.getElementById("btnPlaySound").addEventListener("click", function () {
+      var sonido = document.getElementById("sonido");
+      sonido.play();
+    });
+    function delayLink(event, url, delay) {
+      event.preventDefault(); // Previene que el enlace se abra inmediatamente
+      setTimeout(function () {
+        window.location.href = 'zapata.html'; // Cambia la ubicación después del retraso
+      }, delay); // `delay` está en milisegundos
+    }
+
+  </script>
+
+</body>
+
+
+</html>
